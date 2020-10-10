@@ -127,6 +127,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/mathias/jaci_ws/build/gtest/cmake_install.cmake")
   include("/home/mathias/jaci_ws/build/my_simulations/cmake_install.cmake")
+  include("/home/mathias/jaci_ws/build/jackal_description/cmake_install.cmake")
+  include("/home/mathias/jaci_ws/build/jackal_gazebo/cmake_install.cmake")
+  include("/home/mathias/jaci_ws/build/jackal_viz/cmake_install.cmake")
 
 endif()
 

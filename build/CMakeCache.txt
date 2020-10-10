@@ -306,10 +306,31 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Value Computed by CMake
+jackal_description_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/jackal_description
+
+//Value Computed by CMake
+jackal_description_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/jackal_description
+
+//Value Computed by CMake
+jackal_gazebo_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/jackal_gazebo
+
+//Value Computed by CMake
+jackal_gazebo_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/jackal_gazebo
+
+//Value Computed by CMake
+jackal_viz_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/jackal_viz
+
+//Value Computed by CMake
+jackal_viz_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/jackal_viz
+
+//Value Computed by CMake
 my_simulations_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/my_simulations
 
 //Value Computed by CMake
 my_simulations_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/my_simulations
+
+//The directory containing a CMake configuration file for roslaunch.
+roslaunch_DIR:PATH=/opt/ros/kinetic/share/roslaunch/cmake
 
 
 ########################
@@ -413,7 +434,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1,0 +1,8 @@
+prefix=/home/mathias/jaci_ws/install
+
+Name: jackal_description
+Description: Description of jackal_description
+Version: 0.6.7
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

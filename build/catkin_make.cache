@@ -1,2 +1,2 @@
-my_simulations
+jackal_description:jackal_gazebo:jackal_viz:my_simulations
 -DCATKIN_DEVEL_PREFIX=/home/mathias/jaci_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mathias/jaci_ws/install -G Unix Makefiles

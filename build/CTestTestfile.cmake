@@ -6,3 +6,6 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
 subdirs(my_simulations)
+subdirs(jackal_description)
+subdirs(jackal_gazebo)
+subdirs(jackal_viz)

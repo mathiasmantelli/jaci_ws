@@ -11,10 +11,13 @@
 		<include>
 			<uri>model://ground_plane</uri>
 		</include>
-		<include>
+		<!--include>
 			<uri>model://my1stmodel</uri>
 			<static>true</static>
 			<pose>0 0 0 1.57 0 0</pose>
+		</include-->
+		<include>
+			<uri>model://willowgarage</uri>
 		</include>
 	</world>
 </sdf>

@@ -1,0 +1,8 @@
+prefix=/home/mathias/jaci_ws/install
+
+Name: robot_movements
+Description: Description of robot_movements
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,2 +1,2 @@
-jackal_description:jackal_gazebo:jackal_viz:my_simulations
+different_tasks:frontier_exploration:jackal_description:jackal_exploration:jackal_gazebo:jackal_navigation:jackal_viz:my_simulations:print_map:robot_movements
 -DCATKIN_DEVEL_PREFIX=/home/mathias/jaci_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mathias/jaci_ws/install -G Unix Makefiles

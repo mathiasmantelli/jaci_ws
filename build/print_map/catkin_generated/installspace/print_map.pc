@@ -1,0 +1,8 @@
+prefix=/home/mathias/jaci_ws/install
+
+Name: print_map
+Description: Description of print_map
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -127,9 +127,15 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/mathias/jaci_ws/build/gtest/cmake_install.cmake")
   include("/home/mathias/jaci_ws/build/my_simulations/cmake_install.cmake")
+  include("/home/mathias/jaci_ws/build/different_tasks/cmake_install.cmake")
+  include("/home/mathias/jaci_ws/build/print_map/cmake_install.cmake")
+  include("/home/mathias/jaci_ws/build/robot_movements/cmake_install.cmake")
   include("/home/mathias/jaci_ws/build/jackal_description/cmake_install.cmake")
   include("/home/mathias/jaci_ws/build/jackal_gazebo/cmake_install.cmake")
+  include("/home/mathias/jaci_ws/build/jackal_navigation/cmake_install.cmake")
   include("/home/mathias/jaci_ws/build/jackal_viz/cmake_install.cmake")
+  include("/home/mathias/jaci_ws/build/frontier_exploration/cmake_install.cmake")
+  include("/home/mathias/jaci_ws/build/jackal_exploration/cmake_install.cmake")
 
 endif()
 

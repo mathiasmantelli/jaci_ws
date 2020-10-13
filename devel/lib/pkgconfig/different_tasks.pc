@@ -1,0 +1,8 @@
+prefix=/home/mathias/jaci_ws/devel
+
+Name: different_tasks
+Description: Description of different_tasks
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs

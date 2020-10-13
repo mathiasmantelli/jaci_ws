@@ -17,6 +17,24 @@
 //Build shared libraries (DLLs).
 BUILD_SHARED_LIBS:BOOL=ON
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=Boost_DIR-NOTFOUND
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/include
+
+//Boost library directory DEBUG
+Boost_LIBRARY_DIR_DEBUG:PATH=/usr/lib/x86_64-linux-gnu
+
+//Boost library directory RELEASE
+Boost_LIBRARY_DIR_RELEASE:PATH=/usr/lib/x86_64-linux-gnu
+
+//Boost system library (debug)
+Boost_SYSTEM_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_system.so
+
+//Boost system library (release)
+Boost_SYSTEM_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libboost_system.so
+
 //List of ';' separated packages to exclude
 CATKIN_BLACKLIST_PACKAGES:STRING=
 
@@ -196,6 +214,18 @@ EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 //Empy script
 EMPY_SCRIPT:STRING=/usr/bin/empy
 
+//Path to a file.
+GLUT_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+GLUT_Xi_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libXi.so
+
+//Path to a library.
+GLUT_Xmu_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libXmu.so
+
+//Path to a library.
+GLUT_glut_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libglut.so
+
 //The directory containing a CMake configuration file for GMock.
 GMock_DIR:PATH=GMock_DIR-NOTFOUND
 
@@ -222,6 +252,18 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
+
+//Path to a file.
+OPENGL_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+OPENGL_gl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGL.so
+
+//Path to a library.
+OPENGL_glu_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLU.so
+
+//Path to a file.
+OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2
@@ -251,6 +293,9 @@ UBUNTU:BOOL=TRUE
 UBUNTU_XENIAL:BOOL=TRUE
 
 //Path to a file.
+_file_name:FILEPATH=/home/mathias/jaci_ws/src/frontier_exploration/test/frontier_exploration_tests.launch
+
+//Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/include/gmock/gmock.h
 
 //Path to a file.
@@ -262,8 +307,77 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//The directory containing a CMake configuration file for actionlib.
+actionlib_DIR:PATH=/opt/ros/kinetic/share/actionlib/cmake
+
+//The directory containing a CMake configuration file for actionlib_msgs.
+actionlib_msgs_DIR:PATH=/opt/ros/kinetic/share/actionlib_msgs/cmake
+
+//The directory containing a CMake configuration file for angles.
+angles_DIR:PATH=/opt/ros/kinetic/share/angles/cmake
+
+//The directory containing a CMake configuration file for bond.
+bond_DIR:PATH=/opt/ros/kinetic/share/bond/cmake
+
+//The directory containing a CMake configuration file for bondcpp.
+bondcpp_DIR:PATH=/opt/ros/kinetic/share/bondcpp/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
+
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/kinetic/share/class_loader/cmake
+
+//The directory containing a CMake configuration file for cpp_common.
+cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/kinetic/share/diagnostic_msgs/cmake
+
+//The directory containing a CMake configuration file for diagnostic_updater.
+diagnostic_updater_DIR:PATH=/opt/ros/kinetic/share/diagnostic_updater/cmake
+
+//Value Computed by CMake
+different_tasks_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/different_tasks
+
+//Value Computed by CMake
+different_tasks_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/different_tasks
+
+//The directory containing a CMake configuration file for dynamic_reconfigure.
+dynamic_reconfigure_DIR:PATH=/opt/ros/kinetic/share/dynamic_reconfigure/cmake
+
+//Value Computed by CMake
+frontier_exploration_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/frontier_exploration
+
+//Value Computed by CMake
+frontier_exploration_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/frontier_exploration
+
+//The directory containing a CMake configuration file for gazebo_msgs.
+gazebo_msgs_DIR:PATH=/opt/ros/kinetic/share/gazebo_msgs/cmake
+
+//The directory containing a CMake configuration file for gazebo_ros.
+gazebo_ros_DIR:PATH=/opt/ros/kinetic/share/gazebo_ros/cmake
+
+//The directory containing a CMake configuration file for gencpp.
+gencpp_DIR:PATH=/opt/ros/kinetic/share/gencpp/cmake
+
+//The directory containing a CMake configuration file for geneus.
+geneus_DIR:PATH=/opt/ros/kinetic/share/geneus/cmake
+
+//The directory containing a CMake configuration file for genlisp.
+genlisp_DIR:PATH=/opt/ros/kinetic/share/genlisp/cmake
+
+//The directory containing a CMake configuration file for genmsg.
+genmsg_DIR:PATH=/opt/ros/kinetic/share/genmsg/cmake
+
+//The directory containing a CMake configuration file for gennodejs.
+gennodejs_DIR:PATH=/opt/ros/kinetic/share/gennodejs/cmake
+
+//The directory containing a CMake configuration file for genpy.
+genpy_DIR:PATH=/opt/ros/kinetic/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/kinetic/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/gtest
@@ -312,10 +426,22 @@ jackal_description_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/jackal_descript
 jackal_description_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/jackal_description
 
 //Value Computed by CMake
+jackal_exploration_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/jackal_exploration
+
+//Value Computed by CMake
+jackal_exploration_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/jackal_exploration
+
+//Value Computed by CMake
 jackal_gazebo_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/jackal_gazebo
 
 //Value Computed by CMake
 jackal_gazebo_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/jackal_gazebo
+
+//Value Computed by CMake
+jackal_navigation_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/jackal_navigation
+
+//Value Computed by CMake
+jackal_navigation_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/jackal_navigation
 
 //Value Computed by CMake
 jackal_viz_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/jackal_viz
@@ -323,20 +449,173 @@ jackal_viz_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/jackal_viz
 //Value Computed by CMake
 jackal_viz_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/jackal_viz
 
+//Path to a library.
+lib:FILEPATH=/opt/ros/kinetic/lib/libgazebo_ros_paths_plugin.so
+
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/kinetic/share/message_filters/cmake
+
+//The directory containing a CMake configuration file for message_generation.
+message_generation_DIR:PATH=/opt/ros/kinetic/share/message_generation/cmake
+
+//The directory containing a CMake configuration file for message_runtime.
+message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
+
+//The directory containing a CMake configuration file for move_base_msgs.
+move_base_msgs_DIR:PATH=/opt/ros/kinetic/share/move_base_msgs/cmake
+
 //Value Computed by CMake
 my_simulations_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/my_simulations
 
 //Value Computed by CMake
 my_simulations_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/my_simulations
 
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/kinetic/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for nodelet.
+nodelet_DIR:PATH=/opt/ros/kinetic/share/nodelet/cmake
+
+//The directory containing a CMake configuration file for nodelet_topic_tools.
+nodelet_topic_tools_DIR:PATH=/opt/ros/kinetic/share/nodelet_topic_tools/cmake
+
+//The directory containing a CMake configuration file for pcl_conversions.
+pcl_conversions_DIR:PATH=/opt/ros/kinetic/share/pcl_conversions/cmake
+
+//The directory containing a CMake configuration file for pcl_msgs.
+pcl_msgs_DIR:PATH=/opt/ros/kinetic/share/pcl_msgs/cmake
+
+//The directory containing a CMake configuration file for pcl_ros.
+pcl_ros_DIR:PATH=/opt/ros/kinetic/share/pcl_ros/cmake
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
+
+//Value Computed by CMake
+print_map_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/print_map
+
+//Value Computed by CMake
+print_map_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/print_map
+
+//Value Computed by CMake
+robot_movements_BINARY_DIR:STATIC=/home/mathias/jaci_ws/build/robot_movements
+
+//Value Computed by CMake
+robot_movements_SOURCE_DIR:STATIC=/home/mathias/jaci_ws/src/robot_movements
+
+//The directory containing a CMake configuration file for rosbag.
+rosbag_DIR:PATH=/opt/ros/kinetic/share/rosbag/cmake
+
+//The directory containing a CMake configuration file for rosbag_storage.
+rosbag_storage_DIR:PATH=/opt/ros/kinetic/share/rosbag_storage/cmake
+
+//The directory containing a CMake configuration file for rosconsole.
+rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for roscpp.
+roscpp_DIR:PATH=/opt/ros/kinetic/share/roscpp/cmake
+
+//The directory containing a CMake configuration file for roscpp_serialization.
+roscpp_serialization_DIR:PATH=/opt/ros/kinetic/share/roscpp_serialization/cmake
+
+//The directory containing a CMake configuration file for roscpp_traits.
+roscpp_traits_DIR:PATH=/opt/ros/kinetic/share/roscpp_traits/cmake
+
+//The directory containing a CMake configuration file for rosgraph.
+rosgraph_DIR:PATH=/opt/ros/kinetic/share/rosgraph/cmake
+
+//The directory containing a CMake configuration file for rosgraph_msgs.
+rosgraph_msgs_DIR:PATH=/opt/ros/kinetic/share/rosgraph_msgs/cmake
+
 //The directory containing a CMake configuration file for roslaunch.
 roslaunch_DIR:PATH=/opt/ros/kinetic/share/roslaunch/cmake
+
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/kinetic/share/roslib/cmake
+
+//The directory containing a CMake configuration file for roslz4.
+roslz4_DIR:PATH=/opt/ros/kinetic/share/roslz4/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/kinetic/share/rospack/cmake
+
+//The directory containing a CMake configuration file for rospy.
+rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
+
+//The directory containing a CMake configuration file for rostest.
+rostest_DIR:PATH=/opt/ros/kinetic/share/rostest/cmake
+
+//The directory containing a CMake configuration file for rostime.
+rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
+
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
+
+//The directory containing a CMake configuration file for smclib.
+smclib_DIR:PATH=/opt/ros/kinetic/share/smclib/cmake
+
+//The directory containing a CMake configuration file for std_msgs.
+std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
+
+//The directory containing a CMake configuration file for std_srvs.
+std_srvs_DIR:PATH=/opt/ros/kinetic/share/std_srvs/cmake
+
+//The directory containing a CMake configuration file for tf2.
+tf2_DIR:PATH=/opt/ros/kinetic/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_eigen.
+tf2_eigen_DIR:PATH=/opt/ros/kinetic/share/tf2_eigen/cmake
+
+//The directory containing a CMake configuration file for tf2_msgs.
+tf2_msgs_DIR:PATH=/opt/ros/kinetic/share/tf2_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_py.
+tf2_py_DIR:PATH=/opt/ros/kinetic/share/tf2_py/cmake
+
+//The directory containing a CMake configuration file for tf2_ros.
+tf2_ros_DIR:PATH=/opt/ros/kinetic/share/tf2_ros/cmake
+
+//The directory containing a CMake configuration file for tf2_sensor_msgs.
+tf2_sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/tf2_sensor_msgs/cmake
+
+//The directory containing a CMake configuration file for tf.
+tf_DIR:PATH=/opt/ros/kinetic/share/tf/cmake
+
+//The directory containing a CMake configuration file for topic_tools.
+topic_tools_DIR:PATH=/opt/ros/kinetic/share/topic_tools/cmake
+
+//The directory containing a CMake configuration file for trajectory_msgs.
+trajectory_msgs_DIR:PATH=/opt/ros/kinetic/share/trajectory_msgs/cmake
+
+//The directory containing a CMake configuration file for velodyne_driver.
+velodyne_driver_DIR:PATH=/opt/ros/kinetic/share/velodyne_driver/cmake
+
+//The directory containing a CMake configuration file for velodyne_msgs.
+velodyne_msgs_DIR:PATH=/opt/ros/kinetic/share/velodyne_msgs/cmake
+
+//The directory containing a CMake configuration file for visualization_msgs.
+visualization_msgs_DIR:PATH=/opt/ros/kinetic/share/visualization_msgs/cmake
+
+//The directory containing a CMake configuration file for xmlrpcpp.
+xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
 
 
 ########################
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_INCLUDE_DIR
+Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LIBRARY_DIR_DEBUG
+Boost_LIBRARY_DIR_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LIBRARY_DIR_RELEASE
+Boost_LIBRARY_DIR_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_DEBUG
+Boost_SYSTEM_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_SYSTEM_LIBRARY_RELEASE
+Boost_SYSTEM_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //catkin environment
 CATKIN_ENV:INTERNAL=/home/mathias/jaci_ws/build/catkin_generated/env_cached.sh
 CATKIN_TEST_RESULTS_DIR:INTERNAL=/home/mathias/jaci_ws/build/test_results
@@ -434,7 +713,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -473,10 +752,22 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding GLUT
+FIND_PACKAGE_MESSAGE_DETAILS_GLUT:INTERNAL=[/usr/lib/x86_64-linux-gnu/libglut.so][/usr/include][v()]
+//Details about finding OpenGL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libGL.so][/usr/include][v()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.12()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//ADVANCED property for variable: GLUT_INCLUDE_DIR
+GLUT_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLUT_Xi_LIBRARY
+GLUT_Xi_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLUT_Xmu_LIBRARY
+GLUT_Xmu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLUT_glut_LIBRARY
+GLUT_glut_LIBRARY-ADVANCED:INTERNAL=1
 GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE
 GMOCK_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
 GMOCK_FROM_SOURCE_LIBRARIES:INTERNAL=gmock
@@ -497,10 +788,30 @@ GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_INCLUDE_DIR
+OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_gl_LIBRARY
+OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_glu_LIBRARY
+OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_xmesa_INCLUDE_DIR
+OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //This needs to be in PYTHONPATH when 'setup.py install' is called.
 //  And it needs to match.  But setuptools won't tell us where
 // it will install things.
 PYTHON_INSTALL_DIR:INTERNAL=lib/python2.7/dist-packages
+//Components requested for this build tree.
+_Boost_COMPONENTS_SEARCHED:INTERNAL=system
+//Last used Boost_INCLUDE_DIR value.
+_Boost_INCLUDE_DIR_LAST:INTERNAL=/usr/include
+//Last used Boost_LIBRARY_DIR_DEBUG value.
+_Boost_LIBRARY_DIR_DEBUG_LAST:INTERNAL=/usr/lib/x86_64-linux-gnu
+//Last used Boost_LIBRARY_DIR_RELEASE value.
+_Boost_LIBRARY_DIR_RELEASE_LAST:INTERNAL=/usr/lib/x86_64-linux-gnu
+//Last used Boost_NAMESPACE value.
+_Boost_NAMESPACE_LAST:INTERNAL=boost
+//Last used Boost_USE_MULTITHREADED value.
+_Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
 
